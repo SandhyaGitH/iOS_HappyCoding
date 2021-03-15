@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17505" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ECart" representedClassName="ECart" syncable="YES" codeGenerationType="class">
+        <attribute name="itemCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ECustomer"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProdToOrder"/>
+    </entity>
+    <entity name="ECustomer" representedClassName="ECustomer" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="contactDetails" optional="YES" attributeType="String"/>
+        <attribute name="emailAddress" optional="YES" attributeType="String"/>
+        <attribute name="firstName" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <relationship name="cart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ECart"/>
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="EOrder"/>
+    </entity>
+    <entity name="EOrder" representedClassName="EOrder" syncable="YES" codeGenerationType="class">
+        <attribute name="itemOrdered" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="orderID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EProduct"/>
+    </entity>
+    <entity name="EProduct" representedClassName="EProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="catID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="deptID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pImage" optional="YES" attributeType="Binary"/>
+        <attribute name="prodImage" optional="YES" attributeType="Binary"/>
+        <attribute name="prodName" optional="YES" attributeType="String"/>
+        <attribute name="prodQuantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="prodType" optional="YES" attributeType="String"/>
+        <attribute name="supID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ProdToOrder" representedClassName="ProdToOrder" syncable="YES" codeGenerationType="class">
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="EProduct"/>
+    </entity>
+    <elements>
+        <element name="ECart" positionX="-122.28515625" positionY="212.12109375" width="128" height="88"/>
+        <element name="ECustomer" positionX="-426.99609375" positionY="-256" width="128" height="148"/>
+        <element name="EOrder" positionX="-30.11328125" positionY="-172.34375" width="128" height="103"/>
+        <element name="EProduct" positionX="-514.95703125" positionY="0.53515625" width="128" height="163"/>
+        <element name="ProdToOrder" positionX="-305.89453125" positionY="67.4296875" width="128" height="73"/>
+    </elements>
+</model>
