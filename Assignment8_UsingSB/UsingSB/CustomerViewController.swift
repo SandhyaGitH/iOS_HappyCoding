@@ -1,0 +1,20 @@
+//
+//  CustomerViewController.swift
+//  UsingSB
+//
+//  Created by Samarth chaturvedi on 11/17/20.
+//
+
+import UIKit
+
+class CustomerViewController: UIView {
+
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
+
+}
