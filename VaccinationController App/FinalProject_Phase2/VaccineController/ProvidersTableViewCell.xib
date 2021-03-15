@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="storecell" rowHeight="109" id="KGk-i7-Jjw" customClass="ProvidersTableViewCell" customModule="FinalProject_Phase2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gH7-Go-Wol">
+                        <rect key="frame" x="5" y="55" width="49" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="RCJ-kc-UaE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13c-42-5EA">
+                        <rect key="frame" x="0.0" y="3" width="320" height="19"/>
+                        <attributedString key="attributedText">
+                            <fragment content="ProviderName">
+                                <attributes>
+                                    <font key="NSFont" size="17" name="Arial-BoldItalicMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provider Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jps-B5-j8k">
+                        <rect key="frame" x="0.0" y="26" width="320" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcv-WC-zTf">
+                        <rect key="frame" x="62" y="59" width="122" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="122" id="zFW-FJ-jJR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.1441420192" blue="0.52248509600000004" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vaccines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90W-ii-hdU">
+                        <rect key="frame" x="227" y="54" width="93" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbp-qy-S0u">
+                        <rect key="frame" x="54" y="82.5" width="130" height="12.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="kMo-wC-ukc"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" red="0.13191981512542106" green="1" blue="0.30679696071089957" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="11" name="Arial-BoldMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Kits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rd1-3i-opY">
+                        <rect key="frame" x="227" y="79" width="77" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idp-dW-SN9">
+                        <rect key="frame" x="192" y="59" width="36" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button" image="cross.fill" catalog="system"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stethoscope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="INh-pY-06g">
+                        <rect key="frame" x="194" y="79" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gH7-Go-Wol" firstAttribute="top" secondItem="jps-B5-j8k" secondAttribute="bottom" constant="8" symbolic="YES" id="4Zb-rB-UQW"/>
+                    <constraint firstItem="Rd1-3i-opY" firstAttribute="centerY" secondItem="gH7-Go-Wol" secondAttribute="centerY" constant="10" id="4h6-4F-JHP"/>
+                    <constraint firstItem="hbp-qy-S0u" firstAttribute="top" secondItem="bcv-WC-zTf" secondAttribute="bottom" constant="9" id="7Cz-mk-ebd"/>
+                    <constraint firstItem="13c-42-5EA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9ZI-Re-qrb"/>
+                    <constraint firstItem="hbp-qy-S0u" firstAttribute="leading" secondItem="gH7-Go-Wol" secondAttribute="trailing" id="9cl-uf-QA7"/>
+                    <constraint firstItem="gH7-Go-Wol" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="AX2-Bb-yai"/>
+                    <constraint firstAttribute="trailing" secondItem="90W-ii-hdU" secondAttribute="trailing" id="CzN-Ca-HWS"/>
+                    <constraint firstItem="bcv-WC-zTf" firstAttribute="top" secondItem="jps-B5-j8k" secondAttribute="bottom" constant="12" id="FSO-OP-QLs"/>
+                    <constraint firstItem="jps-B5-j8k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GYo-V1-4iV"/>
+                    <constraint firstAttribute="trailing" secondItem="jps-B5-j8k" secondAttribute="trailing" id="H1i-LS-TVH"/>
+                    <constraint firstItem="gH7-Go-Wol" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="55" id="NyL-w2-nvT"/>
+                    <constraint firstAttribute="bottom" secondItem="gH7-Go-Wol" secondAttribute="bottom" constant="5" id="UYU-ep-1Dg"/>
+                    <constraint firstAttribute="trailing" secondItem="13c-42-5EA" secondAttribute="trailing" id="a01-Vm-7HG"/>
+                    <constraint firstItem="90W-ii-hdU" firstAttribute="leading" secondItem="bcv-WC-zTf" secondAttribute="trailing" constant="43" id="cKk-Eh-hPs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rd1-3i-opY" secondAttribute="trailing" id="edh-IY-xMh"/>
+                    <constraint firstItem="bcv-WC-zTf" firstAttribute="leading" secondItem="gH7-Go-Wol" secondAttribute="trailing" constant="8" id="gwK-RU-Cqu"/>
+                    <constraint firstItem="Rd1-3i-opY" firstAttribute="leading" secondItem="hbp-qy-S0u" secondAttribute="trailing" constant="43" id="lVO-7V-lpW"/>
+                    <constraint firstItem="90W-ii-hdU" firstAttribute="baseline" secondItem="bcv-WC-zTf" secondAttribute="baseline" id="mDg-Qi-baG"/>
+                    <constraint firstItem="13c-42-5EA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="uky-V0-107"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ProviderImageview" destination="gH7-Go-Wol" id="vOC-0S-sNV"/>
+                <outlet property="ProviderNameLbl" destination="13c-42-5EA" id="SPO-Qg-spR"/>
+                <outlet property="ProviderPhone" destination="hbp-qy-S0u" id="WZ2-XZ-HQn"/>
+                <outlet property="ProviderTestKitCountLbl" destination="Rd1-3i-opY" id="Xif-xl-n52"/>
+                <outlet property="ProviderVaccineslbl" destination="90W-ii-hdU" id="QXk-7q-a5Q"/>
+                <outlet property="providerAddressLbl" destination="jps-B5-j8k" id="Vmg-6K-Ema"/>
+            </connections>
+            <point key="canvasLocation" x="82.608695652173921" y="73.995535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cross.fill" catalog="system" width="128" height="116"/>
+        <image name="stethoscope" catalog="system" width="128" height="96"/>
+    </resources>
+</document>

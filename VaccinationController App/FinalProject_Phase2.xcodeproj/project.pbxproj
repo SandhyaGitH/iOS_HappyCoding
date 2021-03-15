@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFC0142325852E05002541B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0142225852E05002541B3 /* AppDelegate.swift */; };
+		AFC0142525852E05002541B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0142425852E05002541B3 /* SceneDelegate.swift */; };
+		AFC0142725852E05002541B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0142625852E05002541B3 /* ViewController.swift */; };
+		AFC0142A25852E05002541B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC0142825852E05002541B3 /* Main.storyboard */; };
+		AFC0142D25852E05002541B3 /* FinalProject_Phase2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFC0142B25852E05002541B3 /* FinalProject_Phase2.xcdatamodeld */; };
+		AFC0142F25852E08002541B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC0142E25852E08002541B3 /* Assets.xcassets */; };
+		AFC0143225852E08002541B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC0143025852E08002541B3 /* LaunchScreen.storyboard */; };
+		AFC014EC2585543E002541B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC014E82585543E002541B3 /* LoginViewController.swift */; };
+		AFC014ED2585543E002541B3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC014E92585543E002541B3 /* LoginViewController.xib */; };
+		AFC014EE2585543E002541B3 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC014EA2585543E002541B3 /* SignUpViewController.xib */; };
+		AFC014EF2585543E002541B3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC014EB2585543E002541B3 /* SignUpViewController.swift */; };
+		AFC015112585557C002541B3 /* RequestApprovalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC015072585557B002541B3 /* RequestApprovalViewController.xib */; };
+		AFC015122585557C002541B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015082585557B002541B3 /* HomeViewController.swift */; };
+		AFC015132585557C002541B3 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015092585557B002541B3 /* RequestTableViewCell.swift */; };
+		AFC015142585557C002541B3 /* ProvidersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0150A2585557C002541B3 /* ProvidersTableViewCell.xib */; };
+		AFC015152585557C002541B3 /* ProvidersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0150B2585557C002541B3 /* ProvidersTableViewCell.swift */; };
+		AFC015162585557C002541B3 /* RequestApprovalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0150C2585557C002541B3 /* RequestApprovalViewController.swift */; };
+		AFC015172585557C002541B3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0150D2585557C002541B3 /* HomeViewController.xib */; };
+		AFC015182585557C002541B3 /* ProvidersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0150E2585557C002541B3 /* ProvidersListViewController.swift */; };
+		AFC015192585557C002541B3 /* ProvidersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0150F2585557C002541B3 /* ProvidersListViewController.xib */; };
+		AFC0151A2585557C002541B3 /* RequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC015102585557C002541B3 /* RequestTableViewCell.xib */; };
+		AFC0152C258555B0002541B3 /* RequestInventoryItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01520258555AF002541B3 /* RequestInventoryItemViewController.swift */; };
+		AFC0152D258555B0002541B3 /* Pvdr_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC01521258555AF002541B3 /* Pvdr_HomeViewController.xib */; };
+		AFC0152E258555B0002541B3 /* Pvdr_InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC01522258555AF002541B3 /* Pvdr_InformationViewController.xib */; };
+		AFC0152F258555B0002541B3 /* UpcomingAppointmentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC01523258555AF002541B3 /* UpcomingAppointmentsViewController.xib */; };
+		AFC01530258555B0002541B3 /* AppointmentRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01524258555AF002541B3 /* AppointmentRequestsViewController.swift */; };
+		AFC01531258555B0002541B3 /* UpcomingAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01525258555AF002541B3 /* UpcomingAppointmentsViewController.swift */; };
+		AFC01532258555B0002541B3 /* AppointmentRequestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC01526258555AF002541B3 /* AppointmentRequestsViewController.xib */; };
+		AFC01533258555B0002541B3 /* Pvdr_HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01527258555B0002541B3 /* Pvdr_HomeViewController.swift */; };
+		AFC01534258555B0002541B3 /* Pvdr_InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01528258555B0002541B3 /* Pvdr_InformationViewController.swift */; };
+		AFC01535258555B0002541B3 /* Pvdr_InventoryCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01529258555B0002541B3 /* Pvdr_InventoryCheckViewController.swift */; };
+		AFC01536258555B0002541B3 /* Pvdr_InventoryCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0152A258555B0002541B3 /* Pvdr_InventoryCheckViewController.xib */; };
+		AFC01537258555B0002541B3 /* RequestInventoryItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0152B258555B0002541B3 /* RequestInventoryItemViewController.xib */; };
+		AFC01541258555C3002541B3 /* BookAppointmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC01539258555C3002541B3 /* BookAppointmentViewController.xib */; };
+		AFC01542258555C3002541B3 /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0153A258555C3002541B3 /* BookAppointmentViewController.swift */; };
+		AFC01543258555C3002541B3 /* Patient_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0153B258555C3002541B3 /* Patient_HomeViewController.xib */; };
+		AFC01544258555C3002541B3 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0153C258555C3002541B3 /* ProfileViewController.xib */; };
+		AFC01545258555C3002541B3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0153D258555C3002541B3 /* ProfileViewController.swift */; };
+		AFC01546258555C3002541B3 /* Patient_HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0153E258555C3002541B3 /* Patient_HomeViewController.swift */; };
+		AFC01547258555C3002541B3 /* SearchProvidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0153F258555C3002541B3 /* SearchProvidersViewController.swift */; };
+		AFC01548258555C3002541B3 /* SearchProvidersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC01540258555C3002541B3 /* SearchProvidersViewController.xib */; };
+		AFC0156F258558A4002541B3 /* DBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0156E258558A4002541B3 /* DBHandler.swift */; };
+		AFC0157E25856391002541B3 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0157C25856391002541B3 /* MenuTableViewCell.swift */; };
+		AFC0157F25856391002541B3 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0157D25856391002541B3 /* MenuTableViewCell.xib */; };
+		AFC0158425856D09002541B3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0158225856D09002541B3 /* MenuViewController.swift */; };
+		AFC0158525856D09002541B3 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0158325856D09002541B3 /* MenuViewController.xib */; };
+		AFC0158A258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01588258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.swift */; };
+		AFC0158B258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC01589258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.xib */; };
+		AFC0158F25859856002541B3 /* InventoryRequestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0158D25859856002541B3 /* InventoryRequestsTableViewCell.swift */; };
+		AFC0159025859856002541B3 /* InventoryRequestsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC0158E25859856002541B3 /* InventoryRequestsTableViewCell.xib */; };
+		AFC015942585A5AB002541B3 /* Patient_MyRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015922585A5AB002541B3 /* Patient_MyRequestViewController.swift */; };
+		AFC015952585A5AB002541B3 /* Patient_MyRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC015932585A5AB002541B3 /* Patient_MyRequestViewController.xib */; };
+		AFC015992585A6C0002541B3 /* AllRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015972585A6C0002541B3 /* AllRequestsViewController.swift */; };
+		AFC0159A2585A6C0002541B3 /* AllRequestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC015982585A6C0002541B3 /* AllRequestsViewController.xib */; };
+		AFC015AD2585E6ED002541B3 /* DB_Inventory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0159F2585E6ED002541B3 /* DB_Inventory+CoreDataClass.swift */; };
+		AFC015AE2585E6ED002541B3 /* DB_Inventory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015A02585E6ED002541B3 /* DB_Inventory+CoreDataProperties.swift */; };
+		AFC015B12585E6ED002541B3 /* DB_Patient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015A32585E6ED002541B3 /* DB_Patient+CoreDataClass.swift */; };
+		AFC015B22585E6ED002541B3 /* DB_Patient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015A42585E6ED002541B3 /* DB_Patient+CoreDataProperties.swift */; };
+		AFC015B32585E6ED002541B3 /* DB_Appoinment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015A52585E6ED002541B3 /* DB_Appoinment+CoreDataClass.swift */; };
+		AFC015B42585E6ED002541B3 /* DB_Appoinment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015A62585E6ED002541B3 /* DB_Appoinment+CoreDataProperties.swift */; };
+		AFC015B52585E6ED002541B3 /* DB_Hospital+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015A72585E6ED002541B3 /* DB_Hospital+CoreDataClass.swift */; };
+		AFC015B62585E6ED002541B3 /* DB_Hospital+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015A82585E6ED002541B3 /* DB_Hospital+CoreDataProperties.swift */; };
+		AFC015B72585E6ED002541B3 /* DB_Login+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015A92585E6ED002541B3 /* DB_Login+CoreDataClass.swift */; };
+		AFC015B82585E6ED002541B3 /* DB_Login+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015AA2585E6ED002541B3 /* DB_Login+CoreDataProperties.swift */; };
+		AFC015B92585E6ED002541B3 /* DB_LoginSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015AB2585E6ED002541B3 /* DB_LoginSession+CoreDataClass.swift */; };
+		AFC015BA2585E6ED002541B3 /* DB_LoginSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015AC2585E6ED002541B3 /* DB_LoginSession+CoreDataProperties.swift */; };
+		AFC015BF2585EF9A002541B3 /* Db_InventoryRequest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015BD2585EF9A002541B3 /* Db_InventoryRequest+CoreDataClass.swift */; };
+		AFC015C02585EF9A002541B3 /* Db_InventoryRequest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015BE2585EF9A002541B3 /* Db_InventoryRequest+CoreDataProperties.swift */; };
+		AFC015C52586B4BE002541B3 /* SerchTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015C32586B4BE002541B3 /* SerchTableTableViewCell.swift */; };
+		AFC015C62586B4BE002541B3 /* SerchTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC015C42586B4BE002541B3 /* SerchTableTableViewCell.xib */; };
+		AFC015CB258BC653002541B3 /* AppointmentTblViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015C9258BC652002541B3 /* AppointmentTblViewCell.swift */; };
+		AFC015CC258BC653002541B3 /* AppointmentTblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC015CA258BC652002541B3 /* AppointmentTblViewCell.xib */; };
+		AFC015D0258BE415002541B3 /* AllRequestsTblViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC015CE258BE415002541B3 /* AllRequestsTblViewCell.swift */; };
+		AFC015D1258BE415002541B3 /* AllRequestsTblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC015CF258BE415002541B3 /* AllRequestsTblViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AFC0141F25852E05002541B3 /* FinalProject_Phase2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject_Phase2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC0142225852E05002541B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFC0142425852E05002541B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFC0142625852E05002541B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFC0142925852E05002541B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFC0142C25852E05002541B3 /* FinalProject_Phase2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinalProject_Phase2.xcdatamodel; sourceTree = "<group>"; };
+		AFC0142E25852E08002541B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFC0143125852E08002541B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFC0143325852E08002541B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFC014E82585543E002541B3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFC014E92585543E002541B3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AFC014EA2585543E002541B3 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		AFC014EB2585543E002541B3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AFC015072585557B002541B3 /* RequestApprovalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestApprovalViewController.xib; sourceTree = "<group>"; };
+		AFC015082585557B002541B3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AFC015092585557B002541B3 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		AFC0150A2585557C002541B3 /* ProvidersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProvidersTableViewCell.xib; sourceTree = "<group>"; };
+		AFC0150B2585557C002541B3 /* ProvidersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersTableViewCell.swift; sourceTree = "<group>"; };
+		AFC0150C2585557C002541B3 /* RequestApprovalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestApprovalViewController.swift; sourceTree = "<group>"; };
+		AFC0150D2585557C002541B3 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		AFC0150E2585557C002541B3 /* ProvidersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersListViewController.swift; sourceTree = "<group>"; };
+		AFC0150F2585557C002541B3 /* ProvidersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProvidersListViewController.xib; sourceTree = "<group>"; };
+		AFC015102585557C002541B3 /* RequestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestTableViewCell.xib; sourceTree = "<group>"; };
+		AFC01520258555AF002541B3 /* RequestInventoryItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestInventoryItemViewController.swift; sourceTree = "<group>"; };
+		AFC01521258555AF002541B3 /* Pvdr_HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Pvdr_HomeViewController.xib; sourceTree = "<group>"; };
+		AFC01522258555AF002541B3 /* Pvdr_InformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Pvdr_InformationViewController.xib; sourceTree = "<group>"; };
+		AFC01523258555AF002541B3 /* UpcomingAppointmentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpcomingAppointmentsViewController.xib; sourceTree = "<group>"; };
+		AFC01524258555AF002541B3 /* AppointmentRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentRequestsViewController.swift; sourceTree = "<group>"; };
+		AFC01525258555AF002541B3 /* UpcomingAppointmentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingAppointmentsViewController.swift; sourceTree = "<group>"; };
+		AFC01526258555AF002541B3 /* AppointmentRequestsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppointmentRequestsViewController.xib; sourceTree = "<group>"; };
+		AFC01527258555B0002541B3 /* Pvdr_HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pvdr_HomeViewController.swift; sourceTree = "<group>"; };
+		AFC01528258555B0002541B3 /* Pvdr_InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pvdr_InformationViewController.swift; sourceTree = "<group>"; };
+		AFC01529258555B0002541B3 /* Pvdr_InventoryCheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pvdr_InventoryCheckViewController.swift; sourceTree = "<group>"; };
+		AFC0152A258555B0002541B3 /* Pvdr_InventoryCheckViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Pvdr_InventoryCheckViewController.xib; sourceTree = "<group>"; };
+		AFC0152B258555B0002541B3 /* RequestInventoryItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestInventoryItemViewController.xib; sourceTree = "<group>"; };
+		AFC01539258555C3002541B3 /* BookAppointmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookAppointmentViewController.xib; sourceTree = "<group>"; };
+		AFC0153A258555C3002541B3 /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
+		AFC0153B258555C3002541B3 /* Patient_HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Patient_HomeViewController.xib; sourceTree = "<group>"; };
+		AFC0153C258555C3002541B3 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		AFC0153D258555C3002541B3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AFC0153E258555C3002541B3 /* Patient_HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient_HomeViewController.swift; sourceTree = "<group>"; };
+		AFC0153F258555C3002541B3 /* SearchProvidersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProvidersViewController.swift; sourceTree = "<group>"; };
+		AFC01540258555C3002541B3 /* SearchProvidersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchProvidersViewController.xib; sourceTree = "<group>"; };
+		AFC0156E258558A4002541B3 /* DBHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHandler.swift; sourceTree = SOURCE_ROOT; };
+		AFC0157C25856391002541B3 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		AFC0157D25856391002541B3 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		AFC0158225856D09002541B3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AFC0158325856D09002541B3 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		AFC01588258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pvdr_RequestedInventoriesViewController.swift; sourceTree = "<group>"; };
+		AFC01589258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pvdr_RequestedInventoriesViewController.xib; sourceTree = "<group>"; };
+		AFC0158D25859856002541B3 /* InventoryRequestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryRequestsTableViewCell.swift; sourceTree = "<group>"; };
+		AFC0158E25859856002541B3 /* InventoryRequestsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InventoryRequestsTableViewCell.xib; sourceTree = "<group>"; };
+		AFC015922585A5AB002541B3 /* Patient_MyRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_MyRequestViewController.swift; sourceTree = "<group>"; };
+		AFC015932585A5AB002541B3 /* Patient_MyRequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Patient_MyRequestViewController.xib; sourceTree = "<group>"; };
+		AFC015972585A6C0002541B3 /* AllRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRequestsViewController.swift; sourceTree = "<group>"; };
+		AFC015982585A6C0002541B3 /* AllRequestsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllRequestsViewController.xib; sourceTree = "<group>"; };
+		AFC0159F2585E6ED002541B3 /* DB_Inventory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Inventory+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015A02585E6ED002541B3 /* DB_Inventory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Inventory+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015A32585E6ED002541B3 /* DB_Patient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Patient+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015A42585E6ED002541B3 /* DB_Patient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Patient+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015A52585E6ED002541B3 /* DB_Appoinment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Appoinment+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015A62585E6ED002541B3 /* DB_Appoinment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Appoinment+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015A72585E6ED002541B3 /* DB_Hospital+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Hospital+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015A82585E6ED002541B3 /* DB_Hospital+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Hospital+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015A92585E6ED002541B3 /* DB_Login+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Login+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015AA2585E6ED002541B3 /* DB_Login+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_Login+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015AB2585E6ED002541B3 /* DB_LoginSession+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_LoginSession+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015AC2585E6ED002541B3 /* DB_LoginSession+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DB_LoginSession+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015BD2585EF9A002541B3 /* Db_InventoryRequest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Db_InventoryRequest+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015BE2585EF9A002541B3 /* Db_InventoryRequest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Db_InventoryRequest+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		AFC015C32586B4BE002541B3 /* SerchTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerchTableTableViewCell.swift; sourceTree = "<group>"; };
+		AFC015C42586B4BE002541B3 /* SerchTableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerchTableTableViewCell.xib; sourceTree = "<group>"; };
+		AFC015C9258BC652002541B3 /* AppointmentTblViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTblViewCell.swift; sourceTree = "<group>"; };
+		AFC015CA258BC652002541B3 /* AppointmentTblViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentTblViewCell.xib; sourceTree = "<group>"; };
+		AFC015CE258BE415002541B3 /* AllRequestsTblViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRequestsTblViewCell.swift; sourceTree = "<group>"; };
+		AFC015CF258BE415002541B3 /* AllRequestsTblViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllRequestsTblViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFC0141C25852E05002541B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFC0141625852E04002541B3 = {
+			isa = PBXGroup;
+			children = (
+				AFC0142125852E05002541B3 /* FinalProject_Phase2 */,
+				AFC0142025852E05002541B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFC0142025852E05002541B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFC0141F25852E05002541B3 /* FinalProject_Phase2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFC0142125852E05002541B3 /* FinalProject_Phase2 */ = {
+			isa = PBXGroup;
+			children = (
+				AFC014E0258550B8002541B3 /* Patient */,
+				AFC014E3258550FE002541B3 /* Providers */,
+				AFC014E425855112002541B3 /* VaccineController */,
+				AFC014E525855134002541B3 /* Login_SignUp */,
+				AFC014E625855148002541B3 /* DBFiles */,
+				AFC0142225852E05002541B3 /* AppDelegate.swift */,
+				AFC0142425852E05002541B3 /* SceneDelegate.swift */,
+				AFC0142625852E05002541B3 /* ViewController.swift */,
+				AFC0142825852E05002541B3 /* Main.storyboard */,
+				AFC0142E25852E08002541B3 /* Assets.xcassets */,
+				AFC0143025852E08002541B3 /* LaunchScreen.storyboard */,
+				AFC0143325852E08002541B3 /* Info.plist */,
+				AFC0142B25852E05002541B3 /* FinalProject_Phase2.xcdatamodeld */,
+			);
+			path = FinalProject_Phase2;
+			sourceTree = "<group>";
+		};
+		AFC014E0258550B8002541B3 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				AFC0153A258555C3002541B3 /* BookAppointmentViewController.swift */,
+				AFC01539258555C3002541B3 /* BookAppointmentViewController.xib */,
+				AFC0153E258555C3002541B3 /* Patient_HomeViewController.swift */,
+				AFC0153B258555C3002541B3 /* Patient_HomeViewController.xib */,
+				AFC0153D258555C3002541B3 /* ProfileViewController.swift */,
+				AFC0153C258555C3002541B3 /* ProfileViewController.xib */,
+				AFC0153F258555C3002541B3 /* SearchProvidersViewController.swift */,
+				AFC01540258555C3002541B3 /* SearchProvidersViewController.xib */,
+				AFC015922585A5AB002541B3 /* Patient_MyRequestViewController.swift */,
+				AFC015932585A5AB002541B3 /* Patient_MyRequestViewController.xib */,
+				AFC015C32586B4BE002541B3 /* SerchTableTableViewCell.swift */,
+				AFC015C42586B4BE002541B3 /* SerchTableTableViewCell.xib */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		AFC014E3258550FE002541B3 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				AFC01524258555AF002541B3 /* AppointmentRequestsViewController.swift */,
+				AFC01526258555AF002541B3 /* AppointmentRequestsViewController.xib */,
+				AFC01527258555B0002541B3 /* Pvdr_HomeViewController.swift */,
+				AFC01521258555AF002541B3 /* Pvdr_HomeViewController.xib */,
+				AFC01528258555B0002541B3 /* Pvdr_InformationViewController.swift */,
+				AFC01522258555AF002541B3 /* Pvdr_InformationViewController.xib */,
+				AFC01529258555B0002541B3 /* Pvdr_InventoryCheckViewController.swift */,
+				AFC0152A258555B0002541B3 /* Pvdr_InventoryCheckViewController.xib */,
+				AFC01520258555AF002541B3 /* RequestInventoryItemViewController.swift */,
+				AFC0152B258555B0002541B3 /* RequestInventoryItemViewController.xib */,
+				AFC01525258555AF002541B3 /* UpcomingAppointmentsViewController.swift */,
+				AFC01523258555AF002541B3 /* UpcomingAppointmentsViewController.xib */,
+				AFC0157C25856391002541B3 /* MenuTableViewCell.swift */,
+				AFC0157D25856391002541B3 /* MenuTableViewCell.xib */,
+				AFC0158225856D09002541B3 /* MenuViewController.swift */,
+				AFC0158325856D09002541B3 /* MenuViewController.xib */,
+				AFC01588258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.swift */,
+				AFC01589258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.xib */,
+				AFC0158D25859856002541B3 /* InventoryRequestsTableViewCell.swift */,
+				AFC0158E25859856002541B3 /* InventoryRequestsTableViewCell.xib */,
+				AFC015C9258BC652002541B3 /* AppointmentTblViewCell.swift */,
+				AFC015CA258BC652002541B3 /* AppointmentTblViewCell.xib */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		AFC014E425855112002541B3 /* VaccineController */ = {
+			isa = PBXGroup;
+			children = (
+				AFC015082585557B002541B3 /* HomeViewController.swift */,
+				AFC0150D2585557C002541B3 /* HomeViewController.xib */,
+				AFC0150E2585557C002541B3 /* ProvidersListViewController.swift */,
+				AFC0150F2585557C002541B3 /* ProvidersListViewController.xib */,
+				AFC0150B2585557C002541B3 /* ProvidersTableViewCell.swift */,
+				AFC0150A2585557C002541B3 /* ProvidersTableViewCell.xib */,
+				AFC0150C2585557C002541B3 /* RequestApprovalViewController.swift */,
+				AFC015072585557B002541B3 /* RequestApprovalViewController.xib */,
+				AFC015092585557B002541B3 /* RequestTableViewCell.swift */,
+				AFC015102585557C002541B3 /* RequestTableViewCell.xib */,
+				AFC015972585A6C0002541B3 /* AllRequestsViewController.swift */,
+				AFC015982585A6C0002541B3 /* AllRequestsViewController.xib */,
+				AFC015CE258BE415002541B3 /* AllRequestsTblViewCell.swift */,
+				AFC015CF258BE415002541B3 /* AllRequestsTblViewCell.xib */,
+			);
+			path = VaccineController;
+			sourceTree = "<group>";
+		};
+		AFC014E525855134002541B3 /* Login_SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AFC014E82585543E002541B3 /* LoginViewController.swift */,
+				AFC014E92585543E002541B3 /* LoginViewController.xib */,
+				AFC014EB2585543E002541B3 /* SignUpViewController.swift */,
+				AFC014EA2585543E002541B3 /* SignUpViewController.xib */,
+			);
+			path = Login_SignUp;
+			sourceTree = "<group>";
+		};
+		AFC014E625855148002541B3 /* DBFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AFC015BD2585EF9A002541B3 /* Db_InventoryRequest+CoreDataClass.swift */,
+				AFC015BE2585EF9A002541B3 /* Db_InventoryRequest+CoreDataProperties.swift */,
+				AFC0159F2585E6ED002541B3 /* DB_Inventory+CoreDataClass.swift */,
+				AFC015A02585E6ED002541B3 /* DB_Inventory+CoreDataProperties.swift */,
+				AFC015A32585E6ED002541B3 /* DB_Patient+CoreDataClass.swift */,
+				AFC015A42585E6ED002541B3 /* DB_Patient+CoreDataProperties.swift */,
+				AFC015A52585E6ED002541B3 /* DB_Appoinment+CoreDataClass.swift */,
+				AFC015A62585E6ED002541B3 /* DB_Appoinment+CoreDataProperties.swift */,
+				AFC015A72585E6ED002541B3 /* DB_Hospital+CoreDataClass.swift */,
+				AFC015A82585E6ED002541B3 /* DB_Hospital+CoreDataProperties.swift */,
+				AFC015A92585E6ED002541B3 /* DB_Login+CoreDataClass.swift */,
+				AFC015AA2585E6ED002541B3 /* DB_Login+CoreDataProperties.swift */,
+				AFC015AB2585E6ED002541B3 /* DB_LoginSession+CoreDataClass.swift */,
+				AFC015AC2585E6ED002541B3 /* DB_LoginSession+CoreDataProperties.swift */,
+				AFC0156E258558A4002541B3 /* DBHandler.swift */,
+			);
+			name = DBFiles;
+			path = ../DBFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFC0141E25852E05002541B3 /* FinalProject_Phase2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC0143625852E08002541B3 /* Build configuration list for PBXNativeTarget "FinalProject_Phase2" */;
+			buildPhases = (
+				AFC0141B25852E05002541B3 /* Sources */,
+				AFC0141C25852E05002541B3 /* Frameworks */,
+				AFC0141D25852E05002541B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinalProject_Phase2;
+			productName = FinalProject_Phase2;
+			productReference = AFC0141F25852E05002541B3 /* FinalProject_Phase2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFC0141725852E04002541B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					AFC0141E25852E05002541B3 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = AFC0141A25852E04002541B3 /* Build configuration list for PBXProject "FinalProject_Phase2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFC0141625852E04002541B3;
+			productRefGroup = AFC0142025852E05002541B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFC0141E25852E05002541B3 /* FinalProject_Phase2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFC0141D25852E05002541B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC01536258555B0002541B3 /* Pvdr_InventoryCheckViewController.xib in Resources */,
+				AFC014EE2585543E002541B3 /* SignUpViewController.xib in Resources */,
+				AFC015952585A5AB002541B3 /* Patient_MyRequestViewController.xib in Resources */,
+				AFC0158525856D09002541B3 /* MenuViewController.xib in Resources */,
+				AFC0159A2585A6C0002541B3 /* AllRequestsViewController.xib in Resources */,
+				AFC0152D258555B0002541B3 /* Pvdr_HomeViewController.xib in Resources */,
+				AFC0151A2585557C002541B3 /* RequestTableViewCell.xib in Resources */,
+				AFC015C62586B4BE002541B3 /* SerchTableTableViewCell.xib in Resources */,
+				AFC0152E258555B0002541B3 /* Pvdr_InformationViewController.xib in Resources */,
+				AFC0158B258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.xib in Resources */,
+				AFC01543258555C3002541B3 /* Patient_HomeViewController.xib in Resources */,
+				AFC0159025859856002541B3 /* InventoryRequestsTableViewCell.xib in Resources */,
+				AFC015112585557C002541B3 /* RequestApprovalViewController.xib in Resources */,
+				AFC015192585557C002541B3 /* ProvidersListViewController.xib in Resources */,
+				AFC0157F25856391002541B3 /* MenuTableViewCell.xib in Resources */,
+				AFC01541258555C3002541B3 /* BookAppointmentViewController.xib in Resources */,
+				AFC014ED2585543E002541B3 /* LoginViewController.xib in Resources */,
+				AFC0143225852E08002541B3 /* LaunchScreen.storyboard in Resources */,
+				AFC01532258555B0002541B3 /* AppointmentRequestsViewController.xib in Resources */,
+				AFC015CC258BC653002541B3 /* AppointmentTblViewCell.xib in Resources */,
+				AFC0142F25852E08002541B3 /* Assets.xcassets in Resources */,
+				AFC0142A25852E05002541B3 /* Main.storyboard in Resources */,
+				AFC01537258555B0002541B3 /* RequestInventoryItemViewController.xib in Resources */,
+				AFC015D1258BE415002541B3 /* AllRequestsTblViewCell.xib in Resources */,
+				AFC015142585557C002541B3 /* ProvidersTableViewCell.xib in Resources */,
+				AFC0152F258555B0002541B3 /* UpcomingAppointmentsViewController.xib in Resources */,
+				AFC015172585557C002541B3 /* HomeViewController.xib in Resources */,
+				AFC01544258555C3002541B3 /* ProfileViewController.xib in Resources */,
+				AFC01548258555C3002541B3 /* SearchProvidersViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFC0141B25852E05002541B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC015992585A6C0002541B3 /* AllRequestsViewController.swift in Sources */,
+				AFC015182585557C002541B3 /* ProvidersListViewController.swift in Sources */,
+				AFC015B72585E6ED002541B3 /* DB_Login+CoreDataClass.swift in Sources */,
+				AFC01531258555B0002541B3 /* UpcomingAppointmentsViewController.swift in Sources */,
+				AFC0142725852E05002541B3 /* ViewController.swift in Sources */,
+				AFC01545258555C3002541B3 /* ProfileViewController.swift in Sources */,
+				AFC0158425856D09002541B3 /* MenuViewController.swift in Sources */,
+				AFC01535258555B0002541B3 /* Pvdr_InventoryCheckViewController.swift in Sources */,
+				AFC01533258555B0002541B3 /* Pvdr_HomeViewController.swift in Sources */,
+				AFC015BF2585EF9A002541B3 /* Db_InventoryRequest+CoreDataClass.swift in Sources */,
+				AFC014EC2585543E002541B3 /* LoginViewController.swift in Sources */,
+				AFC015132585557C002541B3 /* RequestTableViewCell.swift in Sources */,
+				AFC015122585557C002541B3 /* HomeViewController.swift in Sources */,
+				AFC015B32585E6ED002541B3 /* DB_Appoinment+CoreDataClass.swift in Sources */,
+				AFC015B42585E6ED002541B3 /* DB_Appoinment+CoreDataProperties.swift in Sources */,
+				AFC015152585557C002541B3 /* ProvidersTableViewCell.swift in Sources */,
+				AFC015B52585E6ED002541B3 /* DB_Hospital+CoreDataClass.swift in Sources */,
+				AFC0152C258555B0002541B3 /* RequestInventoryItemViewController.swift in Sources */,
+				AFC015AD2585E6ED002541B3 /* DB_Inventory+CoreDataClass.swift in Sources */,
+				AFC01542258555C3002541B3 /* BookAppointmentViewController.swift in Sources */,
+				AFC0142325852E05002541B3 /* AppDelegate.swift in Sources */,
+				AFC01547258555C3002541B3 /* SearchProvidersViewController.swift in Sources */,
+				AFC015B22585E6ED002541B3 /* DB_Patient+CoreDataProperties.swift in Sources */,
+				AFC015CB258BC653002541B3 /* AppointmentTblViewCell.swift in Sources */,
+				AFC015B92585E6ED002541B3 /* DB_LoginSession+CoreDataClass.swift in Sources */,
+				AFC01530258555B0002541B3 /* AppointmentRequestsViewController.swift in Sources */,
+				AFC015D0258BE415002541B3 /* AllRequestsTblViewCell.swift in Sources */,
+				AFC014EF2585543E002541B3 /* SignUpViewController.swift in Sources */,
+				AFC01534258555B0002541B3 /* Pvdr_InformationViewController.swift in Sources */,
+				AFC01546258555C3002541B3 /* Patient_HomeViewController.swift in Sources */,
+				AFC015C02585EF9A002541B3 /* Db_InventoryRequest+CoreDataProperties.swift in Sources */,
+				AFC015942585A5AB002541B3 /* Patient_MyRequestViewController.swift in Sources */,
+				AFC015162585557C002541B3 /* RequestApprovalViewController.swift in Sources */,
+				AFC0158A258597AF002541B3 /* Pvdr_RequestedInventoriesViewController.swift in Sources */,
+				AFC0156F258558A4002541B3 /* DBHandler.swift in Sources */,
+				AFC015B82585E6ED002541B3 /* DB_Login+CoreDataProperties.swift in Sources */,
+				AFC0142D25852E05002541B3 /* FinalProject_Phase2.xcdatamodeld in Sources */,
+				AFC015B62585E6ED002541B3 /* DB_Hospital+CoreDataProperties.swift in Sources */,
+				AFC015C52586B4BE002541B3 /* SerchTableTableViewCell.swift in Sources */,
+				AFC015AE2585E6ED002541B3 /* DB_Inventory+CoreDataProperties.swift in Sources */,
+				AFC015BA2585E6ED002541B3 /* DB_LoginSession+CoreDataProperties.swift in Sources */,
+				AFC0157E25856391002541B3 /* MenuTableViewCell.swift in Sources */,
+				AFC0158F25859856002541B3 /* InventoryRequestsTableViewCell.swift in Sources */,
+				AFC0142525852E05002541B3 /* SceneDelegate.swift in Sources */,
+				AFC015B12585E6ED002541B3 /* DB_Patient+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFC0142825852E05002541B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC0142925852E05002541B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFC0143025852E08002541B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC0143125852E08002541B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFC0143425852E08002541B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFC0143525852E08002541B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFC0143725852E08002541B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FinalProject_Phase2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.Northeastern.Sandhya.FinalProject-Phase2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFC0143825852E08002541B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FinalProject_Phase2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.Northeastern.Sandhya.FinalProject-Phase2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFC0141A25852E04002541B3 /* Build configuration list for PBXProject "FinalProject_Phase2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC0143425852E08002541B3 /* Debug */,
+				AFC0143525852E08002541B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC0143625852E08002541B3 /* Build configuration list for PBXNativeTarget "FinalProject_Phase2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC0143725852E08002541B3 /* Debug */,
+				AFC0143825852E08002541B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFC0142B25852E05002541B3 /* FinalProject_Phase2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFC0142C25852E05002541B3 /* FinalProject_Phase2.xcdatamodel */,
+			);
+			currentVersion = AFC0142C25852E05002541B3 /* FinalProject_Phase2.xcdatamodel */;
+			path = FinalProject_Phase2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AFC0141725852E04002541B3 /* Project object */;
+}

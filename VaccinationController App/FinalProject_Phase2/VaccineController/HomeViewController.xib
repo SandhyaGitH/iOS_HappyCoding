@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="FinalProject_Phase2" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNN-0i-K98">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ude-Ln-ut0">
+                            <rect key="frame" x="0.0" y="742" width="414" height="44"/>
+                            <items>
+                                <barButtonItem title="Requests" width="237" id="2qW-bu-dKd"/>
+                                <barButtonItem style="plain" id="w9z-Dc-10U">
+                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2rb-GD-iKy">
+                                        <rect key="frame" x="237" y="7" width="123" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hospitals"/>
+                                    </button>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOs-Ds-gwt">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Controller" id="Ukg-Dx-sb8">
+                                    <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="tQe-Hq-MfG">
+                                        <connections>
+                                            <action selector="didTabMenuButton" destination="-1" id="ZV9-5J-vW1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" title="logOut" id="GQ5-bH-LQ0">
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="LogOutAction" destination="-1" id="w5h-B1-pRh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ude-Ln-ut0" secondAttribute="bottom" constant="32" id="Coy-ms-LN7"/>
+                        <constraint firstItem="ude-Ln-ut0" firstAttribute="leading" secondItem="NNN-0i-K98" secondAttribute="leading" id="iAB-2N-Ocp"/>
+                        <constraint firstAttribute="trailing" secondItem="ude-Ln-ut0" secondAttribute="trailing" id="xeM-0g-MZa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="NNN-0i-K98" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3ii-e2-C2l"/>
+                <constraint firstItem="NNN-0i-K98" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DCS-vn-89j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NNN-0i-K98" secondAttribute="trailing" id="FjL-Se-Mwo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NNN-0i-K98" secondAttribute="bottom" id="Tpu-Fc-d82"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

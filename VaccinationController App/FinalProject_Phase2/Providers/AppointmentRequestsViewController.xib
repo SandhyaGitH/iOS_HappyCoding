@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppointmentRequestsViewController" customModule="FinalProject_Phase2" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMw-IS-oQ8">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nmW-gN-oti">
+                            <rect key="frame" x="0.0" y="80" width="414" height="738"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                        <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQn-Dp-aYE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <items>
+                                <navigationItem title="Appoinment Requests" id="XNN-Uf-e89"/>
+                            </items>
+                        </navigationBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="dQn-Dp-aYE" firstAttribute="top" secondItem="IMw-IS-oQ8" secondAttribute="top" id="1Ec-Zh-SxN"/>
+                        <constraint firstAttribute="trailing" secondItem="dQn-Dp-aYE" secondAttribute="trailing" id="3Zi-cy-XSp"/>
+                        <constraint firstItem="dQn-Dp-aYE" firstAttribute="leading" secondItem="IMw-IS-oQ8" secondAttribute="leading" id="9Ao-bn-hnx"/>
+                        <constraint firstAttribute="trailing" secondItem="nmW-gN-oti" secondAttribute="trailing" id="Yee-oM-TZH"/>
+                        <constraint firstItem="nmW-gN-oti" firstAttribute="leading" secondItem="IMw-IS-oQ8" secondAttribute="leading" id="Yiw-47-Ydc"/>
+                        <constraint firstItem="nmW-gN-oti" firstAttribute="top" secondItem="dQn-Dp-aYE" secondAttribute="bottom" constant="36" id="luL-vG-t6T"/>
+                        <constraint firstAttribute="bottom" secondItem="nmW-gN-oti" secondAttribute="bottom" id="ndE-ek-28e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IMw-IS-oQ8" secondAttribute="trailing" id="BBB-xN-H8b"/>
+                <constraint firstItem="IMw-IS-oQ8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qbn-MP-aRX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IMw-IS-oQ8" secondAttribute="bottom" id="Uul-ff-Usf"/>
+                <constraint firstItem="IMw-IS-oQ8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wPr-VQ-5Rd"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="68"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

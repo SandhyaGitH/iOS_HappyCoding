@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17505" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="DB_Appoinment" representedClassName="DB_Appoinment" syncable="YES">
+        <attribute name="appointmentDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="appointmentID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="patient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Patient" inverseName="appointment" inverseEntity="DB_Patient"/>
+        <relationship name="provider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Hospital" inverseName="appointments" inverseEntity="DB_Hospital"/>
+    </entity>
+    <entity name="DB_Hospital" representedClassName="DB_Hospital" syncable="YES">
+        <attribute name="addressLine1" optional="YES" attributeType="String"/>
+        <attribute name="aKa" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="hospitalLocation" optional="YES" attributeType="String"/>
+        <attribute name="hospitalName" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="lattitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="providerID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="zipCode" optional="YES" attributeType="String"/>
+        <relationship name="appointments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DB_Appoinment" inverseName="provider" inverseEntity="DB_Appoinment"/>
+        <relationship name="inventoryR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Inventory" inverseName="provider" inverseEntity="DB_Inventory"/>
+        <relationship name="inventoryRequests" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Db_InventoryRequest" inverseName="provider" inverseEntity="Db_InventoryRequest"/>
+        <relationship name="loginUserR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Login" inverseName="provider" inverseEntity="DB_Login"/>
+    </entity>
+    <entity name="DB_Inventory" representedClassName="DB_Inventory" syncable="YES">
+        <attribute name="covidVaccine" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="inventoryID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="n95Masks" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ppeKit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="testKit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="provider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Hospital" inverseName="inventoryR" inverseEntity="DB_Hospital"/>
+    </entity>
+    <entity name="Db_InventoryRequest" representedClassName="Db_InventoryRequest" syncable="YES">
+        <attribute name="approvedData" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isApproved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="item" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantityApproved" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="requestDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="requestID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="provider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Hospital" inverseName="inventoryRequests" inverseEntity="DB_Hospital"/>
+    </entity>
+    <entity name="DB_Login" representedClassName="DB_Login" syncable="YES">
+        <attribute name="loginID" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="userType" optional="YES" attributeType="String"/>
+        <relationship name="loginSession" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_LoginSession" inverseName="loginUserR" inverseEntity="DB_LoginSession"/>
+        <relationship name="patient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Patient" inverseName="loginUserR" inverseEntity="DB_Patient"/>
+        <relationship name="provider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Hospital" inverseName="loginUserR" inverseEntity="DB_Hospital"/>
+    </entity>
+    <entity name="DB_LoginSession" representedClassName="DB_LoginSession" syncable="YES">
+        <attribute name="isLogin" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sessionID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="loginUserR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Login" inverseName="loginSession" inverseEntity="DB_Login"/>
+    </entity>
+    <entity name="DB_Patient" representedClassName="DB_Patient" syncable="YES">
+        <attribute name="addressLine1" optional="YES" attributeType="String"/>
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="completeAddress" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="isVaccined" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lattitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="patientID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="phoneNo" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="zipCode" optional="YES" attributeType="String"/>
+        <relationship name="appointment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Appoinment" inverseName="patient" inverseEntity="DB_Appoinment"/>
+        <relationship name="loginUserR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DB_Login" inverseName="patient" inverseEntity="DB_Login"/>
+    </entity>
+    <elements>
+        <element name="DB_Appoinment" positionX="-18" positionY="27" width="128" height="103"/>
+        <element name="DB_Hospital" positionX="36" positionY="81" width="128" height="268"/>
+        <element name="DB_Inventory" positionX="9" positionY="54" width="128" height="133"/>
+        <element name="Db_InventoryRequest" positionX="18" positionY="63" width="128" height="163"/>
+        <element name="DB_Login" positionX="27" positionY="72" width="128" height="133"/>
+        <element name="DB_LoginSession" positionX="36" positionY="81" width="128" height="88"/>
+        <element name="DB_Patient" positionX="45" positionY="90" width="128" height="268"/>
+    </elements>
+</model>

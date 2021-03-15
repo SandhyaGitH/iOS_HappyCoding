@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpcomingAppointmentsViewController" customModule="FinalProject_Phase2" customModuleProvider="target">
+            <connections>
+                <outlet property="providerNamelbl" destination="G02-lN-JS0" id="hDs-xK-eCl"/>
+                <outlet property="tableView" destination="9oa-Sr-grt" id="CqW-8J-Oau"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gur-kG-EpN">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9oa-Sr-grt">
+                            <rect key="frame" x="0.0" y="74.5" width="414" height="743.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                        <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFX-M6-kx2">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <items>
+                                <navigationItem title="Upcoming Appoinments" id="eOU-PC-PcC">
+                                    <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="2Wu-LB-VPR">
+                                        <connections>
+                                            <action selector="MenuBtnTapped:" destination="-1" id="Vp2-QD-V2f"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G02-lN-JS0">
+                            <rect key="frame" x="20" y="49" width="374" height="20.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="provider">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="0.0" blue="0.55999866609554694" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9oa-Sr-grt" secondAttribute="trailing" id="AJt-1f-V6E"/>
+                        <constraint firstAttribute="bottom" secondItem="9oa-Sr-grt" secondAttribute="bottom" id="ALl-R7-Igg"/>
+                        <constraint firstItem="G02-lN-JS0" firstAttribute="top" secondItem="KFX-M6-kx2" secondAttribute="bottom" constant="5" id="EU1-vd-fgf"/>
+                        <constraint firstItem="9oa-Sr-grt" firstAttribute="leading" secondItem="gur-kG-EpN" secondAttribute="leading" id="KJZ-uc-gtp"/>
+                        <constraint firstItem="KFX-M6-kx2" firstAttribute="leading" secondItem="9oa-Sr-grt" secondAttribute="leading" id="Kan-r4-Ejz"/>
+                        <constraint firstItem="9oa-Sr-grt" firstAttribute="top" secondItem="G02-lN-JS0" secondAttribute="bottom" constant="5" id="KoP-bW-ipn"/>
+                        <constraint firstItem="G02-lN-JS0" firstAttribute="leading" secondItem="gur-kG-EpN" secondAttribute="leading" constant="20" id="aeK-LO-SY3"/>
+                        <constraint firstItem="KFX-M6-kx2" firstAttribute="trailing" secondItem="9oa-Sr-grt" secondAttribute="trailing" id="bcb-Tj-Slg"/>
+                        <constraint firstAttribute="trailing" secondItem="G02-lN-JS0" secondAttribute="trailing" constant="20" id="n3s-fI-e1h"/>
+                        <constraint firstItem="KFX-M6-kx2" firstAttribute="top" secondItem="gur-kG-EpN" secondAttribute="top" id="z8Y-FB-mws"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gur-kG-EpN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DpG-ZL-S5a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gur-kG-EpN" secondAttribute="trailing" id="Vlb-ez-0mm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gur-kG-EpN" secondAttribute="bottom" id="W5h-bi-D0q"/>
+                <constraint firstItem="gur-kG-EpN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qqm-VO-lLj"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
